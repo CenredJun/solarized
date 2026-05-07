@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solar Installation Gallery — Solar Cenred Davao City</title>
+  <meta name="description" content="Browse our solar panel installation projects in Davao City and the Philippines. Residential, commercial, off-grid, and hybrid solar systems." />
+  <meta property="og:title" content="Solar Installation Gallery — Solar Cenred" />
+  <meta property="og:url" content="https://solarized.bizguro.net/gallery.html" />
+  <link rel="canonical" href="https://solarized.bizguro.net/gallery.html" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%80%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">☀️ Solar Cenred</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="btn btn-primary nav-cta" onclick="openChatWithMessage('I want a free solar quote')">Get Free Quote</button>
+      <div class="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+  <div id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <header class="page-hero">
+    <div class="container">
+      <h1>Project Gallery</h1>
+      <p class="lead">A selection of solar installations across the Philippines and Texas.</p>
+    </div>
+  </header>
+
+  <!-- Filter -->
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
+        <button class="filter-btn" onclick="filterGallery('residential', this)">Residential</button>
+        <button class="filter-btn" onclick="filterGallery('commercial', this)">Commercial</button>
+        <button class="filter-btn" onclick="filterGallery('offgrid', this)">Off-Grid</button>
+        <button class="filter-btn" onclick="filterGallery('hybrid', this)">Hybrid</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item bg-warm-1" data-category="residential" onclick="openLightbox('Rooftop Installation','Residential','5 kW','South-facing rooftop install in Davao City. 9× LONGi 575W panels with Huawei SUN2000 inverter.')">
+          <span>Rooftop Installation<br /><small>Davao City · Residential</small></span>
+        </div>
+        <div class="gallery-item bg-warm-2" data-category="hybrid" onclick="openLightbox('10 kW Hybrid System','Hybrid','10 kW + 15 kWh','Sol-Ark 12K hybrid with MUST LiFePO4 battery bank, full house backup.')">
+          <span>10 kW Hybrid System<br /><small>Matina, Davao · Hybrid</small></span>
+        </div>
+        <div class="gallery-item bg-neutral-1" data-category="offgrid" onclick="openLightbox('Off-Grid Cabin','Off-Grid','3 kW + 15 kWh','Remote mountain cabin, 100% solar with diesel backup generator.')">
+          <span>Off-Grid Cabin<br /><small>Mountain Province · Off-Grid</small></span>
+        </div>
+        <div class="gallery-item bg-warm-3" data-category="commercial" onclick="openLightbox('Commercial Rooftop','Commercial','30 kW','SM Lanang commercial area rooftop, ground-mount layout simulation in Helioscope.')">
+          <span>Commercial Rooftop<br /><small>SM Lanang Area · Commercial</small></span>
+        </div>
+        <div class="gallery-item bg-warm-4" data-category="hybrid" onclick="openLightbox('Battery Bank Setup','Hybrid','30 kWh','Six-module MUST 100Ah stack feeding two parallel Sol-Ark inverters.')">
+          <span>Battery Bank Setup<br /><small>30 kWh System · Hybrid</small></span>
+        </div>
+        <div class="gallery-item bg-warm-1" data-category="residential" onclick="openLightbox('Panel Array','Residential','15 kW','Two-roof split installation with optimizers for partial-shade compensation.')">
+          <span>Panel Array<br /><small>15 kW System · Residential</small></span>
+        </div>
+        <div class="gallery-item bg-neutral-2" data-category="commercial" onclick="openLightbox('Ground Mount Installation','Commercial','50 kW','Galvanized-steel ground array on screw-pile foundation.')">
+          <span>Ground Mount<br /><small>50 kW · Commercial</small></span>
+        </div>
+        <div class="gallery-item bg-warm-2" data-category="hybrid" onclick="openLightbox('Inverter Room Setup','Hybrid','12 kW','Sol-Ark 12K with surge protection and combiner box, color-coded conduits.')">
+          <span>Inverter Room<br /><small>Sol-Ark 12K · Hybrid</small></span>
+        </div>
+        <div class="gallery-item bg-warm-3" data-category="residential" onclick="openLightbox('5 kW Starter System','Residential','5 kW','First-time-homeowner package with simple monitoring app.')">
+          <span>5 kW Starter System<br /><small>First-time Homeowner</small></span>
+        </div>
+        <div class="gallery-item bg-neutral-1" data-category="offgrid" onclick="openLightbox('50 kWh Off-Grid Farm','Off-Grid','15 kW + 50 kWh','Agri-business with cold storage and irrigation pump loads.')">
+          <span>50 kWh Off-Grid Farm<br /><small>Off-Grid</small></span>
+        </div>
+        <div class="gallery-item bg-warm-4" data-category="residential" onclick="openLightbox('EV Charging + Solar','Residential','8 kW + EVSE','Grid-tied solar with Level-2 home EV charger integration.')">
+          <span>EV Charging + Solar<br /><small>Residential</small></span>
+        </div>
+        <div class="gallery-item bg-warm-1" data-category="commercial" onclick="openLightbox('School Solar Project','Commercial','25 kW','Public elementary school in Davao del Norte, donor-funded.')">
+          <span>School Solar Project<br /><small>Davao del Norte · Commercial</small></span>
+        </div>
+        <div class="gallery-item bg-neutral-3" data-category="offgrid" onclick="openLightbox('Post-Typhoon Rebuild','Off-Grid','5 kW + 20 kWh','Resilient solar replacing destroyed grid connection.')">
+          <span>Post-Typhoon Rebuild<br /><small>Resilient Solar · Off-Grid</small></span>
+        </div>
+        <div class="gallery-item bg-warm-2" data-category="residential" onclick="openLightbox('Net Metering Install','Residential','6 kW','Davao Light net-metered residence, near-zero monthly bill.')">
+          <span>Net Metering Install<br /><small>Davao Light Connected</small></span>
+        </div>
+        <div class="gallery-item bg-warm-3" data-category="commercial" onclick="openLightbox('Commercial Warehouse','Commercial','75 kW','Austin TX warehouse rooftop, 30% federal ITC + utility rebates.')">
+          <span>Commercial Warehouse<br /><small>Austin TX · Commercial</small></span>
+        </div>
+        <div class="gallery-item bg-warm-4" data-category="commercial" onclick="openLightbox('Community Solar','Commercial','40 kW','Barangay project with shared metering for 12 households.')">
+          <span>Community Solar<br /><small>Barangay Project</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before / After -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <h2>Before &amp; After</h2>
+        <p>Real customer bills before and after going solar.</p>
+      </div>
+      <div class="before-after-grid">
+        <div class="ba-card animate-on-scroll">
+          <div class="ba-pair">
+            <div class="ba-half ba-before">Before</div>
+            <div class="ba-half ba-after">After</div>
+          </div>
+          <div class="ba-info">
+            <strong>Reyes Family · Davao City</strong><br />
+            8 kW Hybrid System<br />
+            Bill: ₱12,000/mo → <strong>₱900/mo</strong>
+          </div>
+        </div>
+        <div class="ba-card animate-on-scroll">
+          <div class="ba-pair">
+            <div class="ba-half ba-before">Before</div>
+            <div class="ba-half ba-after">After</div>
+          </div>
+          <div class="ba-info">
+            <strong>Lopez Business · Buhangin</strong><br />
+            20 kW Commercial<br />
+            Bill: ₱45,000/mo → <strong>₱3,200/mo</strong>
+          </div>
+        </div>
+        <div class="ba-card animate-on-scroll">
+          <div class="ba-pair">
+            <div class="ba-half ba-before">Before</div>
+            <div class="ba-half ba-after">After</div>
+          </div>
+          <div class="ba-info">
+            <strong>Santos Residence · Toril</strong><br />
+            5 kW On-Grid<br />
+            Bill: ₱5,500/mo → <strong>₱400/mo</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <h2>Watch Our Installation Process</h2>
+      </div>
+      <div class="video-placeholder animate-on-scroll" onclick="openChatWithMessage('I want to schedule a video consultation')">
+        <div class="video-play-icon"><i class="fas fa-play"></i></div>
+        <p style="font-size:1.1rem;font-weight:600;margin:0;">Watch Our End-to-End Installation Process</p>
+        <p style="opacity:0.85;margin-top:8px;">From Site Assessment to First Power-On</p>
+      </div>
+      <p class="text-center mt-md" style="color: var(--color-text-muted);">Contact us to request a video consultation.</p>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">×</button>
+      <h3 id="lightbox-title">Project Title</h3>
+      <p id="lightbox-type" style="color: var(--color-primary); font-weight: 600;">Type: …</p>
+      <p id="lightbox-size" style="color: var(--color-text-soft);">System size: …</p>
+      <p id="lightbox-desc">Description goes here.</p>
+      <button class="btn btn-primary" onclick="closeLightbox(); openChatWithMessage('Tell me more about projects like this one');">
+        Ask About Similar Projects →
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>☀️ Solar Cenred</h4>
+          <p>Solar Cenred Corp. (Philippines)<br />Solar Cenred LLC (USA)</p>
+          <p>📍 Unit 69, 96th Floor, Matina IT Center, Davao City 8000</p>
+          <p>📍 1234 Capital Drive, Suite 200, Austin, TX 78701</p>
+          <p>📞 (082) 123-4567 (PH) · (512) 555-0198 (US)</p>
+          <p>✉️ <a href="mailto:cenredgonzales@gmail.com">cenredgonzales@gmail.com</a></p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://facebook.com/zhenpula" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://linkedin.com/in/cenredjgonzales" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2025 Solar Cenred. All rights reserved. · Built with ❤️ and AI — Powered by Claude</div>
+    </div>
+  </footer>
+
+  <!-- Chat Bot -->
+  <div id="chat-fab" onclick="toggleChat()" title="Chat with our Solar AI">
+    <i class="fas fa-solar-panel"></i>
+    <span id="chat-notification-dot"></span>
+  </div>
+  <div id="chat-window" style="display:none;">
+    <div id="chat-header">
+      <div id="chat-header-info">
+        <div id="chat-avatar">☀️</div>
+        <div>
+          <div id="chat-name">Solar Cenred AI</div>
+          <div id="chat-status">● Online · Powered by Claude</div>
+        </div>
+      </div>
+      <div id="chat-header-actions">
+        <button onclick="emailQuote()" title="Email me a quote">✉️</button>
+        <button onclick="clearChat()" title="Clear chat">🗑️</button>
+        <button onclick="toggleChat()" title="Close">✕</button>
+      </div>
+    </div>
+    <div id="chat-messages"></div>
+    <div id="quick-replies" style="display:none;"></div>
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Ask about solar systems, pricing..." />
+      <button onclick="sendMessage()" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="knowledge/knowledge-base.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lead.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
