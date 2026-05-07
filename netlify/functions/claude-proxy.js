@@ -1,7 +1,8 @@
 exports.handler = async function(event, context) {
   const headers = {
-    'Access-Control-Allow-Origin': 'https://solar.bizguro.net',
+    'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Content-Type': 'application/json'
   };
 
@@ -15,7 +16,6 @@ exports.handler = async function(event, context) {
 
   try {
     const body = JSON.parse(event.body);
-    
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -30,19 +30,9 @@ exports.handler = async function(event, context) {
         messages: body.messages
       })
     });
-
     const data = await response.json();
-    return {
-      statusCode: 200,
-      headers,
-      body: JSON.stringify(data)
-    };
-
+    return { statusCode: 200, headers, body: JSON.stringify(data) };
   } catch (error) {
-    return {
-      statusCode: 500,
-      headers,
-      body: JSON.stringify({ error: error.message })
-    };
+    return { statusCode: 500, headers, body: JSON.stringify({ error: error.message }) };
   }
 };
