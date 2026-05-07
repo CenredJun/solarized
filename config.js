@@ -6,7 +6,7 @@
 
 const SITE_CONFIG = {
   // Anthropic Claude API
-  claudeApiKey: 'YOUR_ANTHROPIC_API_KEY_HERE',
+  claudeApiKey: 'Y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',
   claudeModel: 'claude-sonnet-4-20250514',
   claudeMaxTokens: 1000,
 
@@ -20,7 +20,7 @@ const SITE_CONFIG = {
   companyEmail: 'cenredgonzales@gmail.com',
 
   // Site URLs
-  siteUrl: 'https://solarized.bizguro.net',
+  siteUrl: 'https://solar.bizguro.net',
   githubRepo: 'https://github.com/CenredJun/solarized',
 
   // Google Analytics (optional)
