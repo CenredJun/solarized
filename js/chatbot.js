@@ -156,13 +156,10 @@ async function sendMessage(text) {
 
 // ─── Claude API Call ─────────────────────────────────────────
 async function callClaudeAPI(systemPrompt, messages) {
-  const response = await fetch('https://api.anthropic.com/v1/messages', {
+  const response = await fetch('/.netlify/functions/claude-proxy', {
     method: 'POST',
     headers: {
-      'Content-Type':                              'application/json',
-      'x-api-key':                                 SITE_CONFIG.claudeApiKey,
-      'anthropic-version':                         '2023-06-01',
-      'anthropic-dangerous-direct-browser-access': 'true'
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify({
       model:      SITE_CONFIG.claudeModel,
