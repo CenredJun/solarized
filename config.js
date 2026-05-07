@@ -6,7 +6,7 @@
 
 const SITE_CONFIG = {
   // Anthropic Claude API
-  claudeApiKey: 'YOUR_ANTHROPIC_API_KEY_HERE',
+  claudeApiKey: 'using-netlify-proxy',
   claudeModel: 'claude-sonnet-4-20250514',
   claudeMaxTokens: 1000,
 
