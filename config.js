@@ -6,7 +6,7 @@
 
 const SITE_CONFIG = {
   // Anthropic Claude API
-  claudeApiKey: 'Y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',
+  claudeApiKey: 'YOUR_ANTHROPIC_API_KEY_HERE',
   claudeModel: 'claude-sonnet-4-20250514',
   claudeMaxTokens: 1000,
 
