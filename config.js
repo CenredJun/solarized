@@ -7,7 +7,7 @@
 const SITE_CONFIG = {
   // Anthropic Claude API
   claudeApiKey: 'using-netlify-proxy',
-  claudeModel: 'claude-sonnet-4-20250514',
+  claudeModel: 'claude-sonnet-4-5',
   claudeMaxTokens: 1000,
 
   // EmailJS — get free account at https://emailjs.com
